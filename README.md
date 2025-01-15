@@ -7,10 +7,11 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 ![SCENITH_protocol](https://github.com/user-attachments/assets/2997ebdd-0370-4b4f-b834-711a0dae5083)
 
 <br/>
-To generate single cell metabolic values, the FCS file obtained is pre-processed with FlowJo software and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cells cluster together, the metabolic parameters of one cell are calculated from the puromycin values of its neighbouring cells. The Python script __name__ iterates through all the cells in the FCS file, finding the K-nearest neighbours of each cell within a given radius and calculating their glucose and mitochondrial dependencies. 
+To generate single cell metabolic values, the FCS file obtained is pre-processed with FlowJo software and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cells cluster together, the metabolic parameters of one cell are infered from the puromycin values of its neighbouring cells. The Python script __name__ takes an FCS file, finds the K-nearest neighbours of each cell within a given radius and calculate its glucose and mitochondrial dependencies. In order to ensure both a minimum number of cells and reasonable metabolic values, additional quality controls are implemented. The following diagram provides a visual overview of the algorithmic and the underlying calculations.<br/><br/>
 
 
+<br/>
 
-
+![Umap_calculations](https://github.com/user-attachments/assets/5a5c5123-e441-49db-a463-e7d4c5d15c86)
 
 
