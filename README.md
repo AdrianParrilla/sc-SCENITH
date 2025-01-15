@@ -13,4 +13,4 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 ![Umap_calculations](https://github.com/user-attachments/assets/7ba60789-656e-4fc1-87f4-4aab0ef86999)
 
 
-
+Finally, the metabolic parameters for each cell can be represented
