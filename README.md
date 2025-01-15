@@ -7,7 +7,7 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 ![SCENITH protocol_red](https://github.com/user-attachments/assets/82233581-15bb-49d9-8809-2343c8838add)
 
 <br/>
-To generate single cell metabolic values, the FCS file obtained from the flow cytometer is pre-processed with [FlowJo](https://www.flowjo.com/solutions/flowjo) and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cells cluster together, the metabolic parameters of one cell are calculated according to the values of the neighbouring cells. 
+To generate single cell metabolic values, the FCS file obtained from the flow cytometer is pre-processed with [FlowJo](https://www.flowjo.com/solutions/flowjo) and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cells cluster together, the metabolic parameters of one cell are calculated according to the values of the neighbouring cells. [FlowJo](https://www.flowjo.com/solutions/flowjo)
 
 
 
