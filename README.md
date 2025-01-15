@@ -1,7 +1,7 @@
 # sc-SCENITH
 
 Implementation of a pseudo-single cell metabolic calulation from flow cytometry data based on the SCENITH method, described by [Argüello et al. (2020)
-](https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30602-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413120306021%3Fshowall%3Dtrue). We perform a variation of the original protocol to include a barcoding step during the treatment with metabolic inhibitors, which allows the conditions to be pooled and processed together, thereby increasing the robustness of the results. The scheme below illustrates the barcoding process and how the different conditions are separated during the analysis. 
+](https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30602-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413120306021%3Fshowall%3Dtrue). We perform a variation of the original protocol to include a barcoding step during the treatment with metabolic inhibitors, which allows the conditions to be pooled and processed together, thereby increasing the robustness of the results. The scheme below illustrates the barcoding process and how the different conditions are separated during the analysis.<br/>
 <br/>
 
 ![SCENITH_protocol](https://github.com/user-attachments/assets/2997ebdd-0370-4b4f-b834-711a0dae5083)
