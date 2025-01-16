@@ -15,7 +15,7 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 
 
 
-Finally, the metabolic profiles of each cell can be represented in the UMAP. The final result of the analysis is an FCS file that includes the metabolic parameters as new channels and can be exported and opened in FlowJo. Future implementations will include unsupervised clustering of cells using [FlowSOM](https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html) algorithm and consider only the neighbours in the defined clusters for the metabolic assesment. The test data folder contains an FCS file with 500000 PBMCs stained with a 32-color panel in which the SCENITH calculation was performed.
+<p align="justify">Finally, the metabolic profiles of each cell can be represented in the UMAP. The final result of the analysis is an FCS file that includes the metabolic parameters as new channels and can be exported and opened in FlowJo. Future implementations will include unsupervised clustering of cells using [FlowSOM](https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html) algorithm and consider only the neighbours in the defined clusters for the metabolic assesment. The test data folder contains an FCS file with 500000 PBMCs stained with a 32-color panel in which the SCENITH calculation was performed.</p>
 <br/>
 <br/>  
 
