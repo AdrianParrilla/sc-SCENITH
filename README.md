@@ -7,7 +7,7 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 ![SCENITH_protocol](https://github.com/user-attachments/assets/2997ebdd-0370-4b4f-b834-711a0dae5083)
 
 <br/>
-<p align="justify">To generate single cell metabolic values, the FCS file obtained is pre-processed with FlowJo software and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cell types cluster together, the metabolic parameters of one cell are infered from the puromycin values of its neighbouring cells. The Python script __name__ takes an FCS file, finds the K-nearest neighbours of each cell within a given radius and performs the calculation of the glucose and mitochondrial dependencies. In order to ensure both a minimum number of cells per calculation and reasonable metabolic values, additional quality controls are implemented. The following diagram provides a visual overview of the algorithm and the underlying calculations.</p><br/>
+<p align="justify">To generate single cell metabolic values, the FCS file obtained is pre-processed with FlowJo software and a dimensionality reduction is performed including all markers (except live/dead and CD45 markers, used for barcoding). Based on the assumption that similar cell types cluster together, the metabolic parameters of one cell are infered from the puromycin values of its neighbouring cells. The Python script KNN_UMAP takes an FCS file, finds the K-nearest neighbours of each cell within a given radius and performs the calculation of the glucose and mitochondrial dependencies. In order to ensure both a minimum number of cells per calculation and reasonable metabolic values, additional quality controls are implemented. The following diagram provides a visual overview of the algorithm and the underlying calculations.</p><br/>
 
 
 ![Umap_calculations](https://github.com/user-attachments/assets/a5d86ae7-1a8d-4638-a19c-ba26a113f998)
@@ -15,7 +15,7 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 
 
 
-Finally, the metabolic profiles of each cell can be represented in the UMAP
+Finally, the metabolic profiles of each cell can be represented in the UMAP. The final result of the analysis is an FCS file that includes the metabolic parameters as new channels and can be exported and opened in FlowJo. FFuture implementations will include unsupervised clustering of cells using [FlowSOM](https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html) algorithm and consider only the neighbours in the defined clusters for the metabolic assesment.
 <br/>
 <br/>  
 
