@@ -12,12 +12,19 @@ Implementation of a pseudo-single cell metabolic calulation from flow cytometry 
 
 ![Umap_calculations](https://github.com/user-attachments/assets/a5d86ae7-1a8d-4638-a19c-ba26a113f998)
 
-
-
-
-Finally, the metabolic profiles of each cell can be represented in the UMAP. The final result of the analysis is an FCS file that includes the metabolic parameters as new channels and can be exported and opened in FlowJo. Future implementations will include unsupervised clustering of cells using [FlowSOM](https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html) algorithm and consider only the neighbours in the defined clusters for the metabolic assesment. The test data folder contains an FCS file with 100,000 PBMCs stained with a 32-color panel in which a UMAP has already been performed.
 <br/>
-<br/>  
+
+
+<p align="justify">
+  Finally, the metabolic profiles of each cell can be represented in the UMAP. The final result of the analysis is an FCS file that includes the metabolic parameters as new channels and can be exported and opened in FlowJo. Future implementations will include unsupervised clustering of cells using the 
+  <a href="https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html" target="_blank" rel="noopener noreferrer">
+    FlowSOM
+  </a> 
+  algorithm and consider only the neighbours in the defined clusters for the metabolic assessment. The test data folder contains an FCS file with 100,000 PBMCs stained with a 32-color panel in which a UMAP has already been performed.
+</p>
+<br/>
+<br/>
+  
 
 ![UMAP_metab](https://github.com/user-attachments/assets/21f1fa1f-9c55-4598-a50a-0a788951b2bb)
 
